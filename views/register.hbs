@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="title">
+        <h1>Register</h1>
+    </div>
+    <div class="main">
+        <div class="wapper">
+            <form action="/register" method="post">
+                <span>Username:</span><br><br>
+                <input type="text" name="username" autocomplete="off"><br><br>
+                <span>Password:</span><br><br>
+                <input type="text" name="password" autocomplete="off"><br><br>
+                <span>Retype-Password:</span><br><br>
+                <input type="text" name="retypepassword" autocomplete="off"><br><br>
+                {{#if status}}
+                <span style="color:green;">{{label}}</span>
+                {{else}}
+                <span style="color:red;">{{label}}</span>
+                {{/if}}
+                <br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+</div>
