@@ -1,9 +1,8 @@
 
 function route(app) {
     //index page
-    app.get('/', function(req,res) {
-        res.render('index');
-    });
+    const indexController = require("../controllers/index.controller.js");
+    app.get('/', indexController.get);
     
     //login page
     const loginController = require("../controllers/login.controller.js");
