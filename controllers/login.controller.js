@@ -1,5 +1,5 @@
 
-const queryLogin = require('../models/login.model.js');
+
 
 class LoginController {
     get(req,res) {
@@ -9,7 +9,10 @@ class LoginController {
         const username = req.body.username;
         const password = req.body.password;
         if(username && password) {
+
+            const queryLogin = require('../models/login.model.js');
             queryLogin.isUserExist(username,password, (status) => {
+                
                 if(status) {
                     res.render('login', {
                         status: true,
