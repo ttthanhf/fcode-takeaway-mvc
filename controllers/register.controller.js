@@ -1,7 +1,7 @@
 
 const queryRegister = require('../models/register.model.js');
 
-class TodolistController {
+class RegisterController {
     get(req,res) {
         res.render('register');
     }
@@ -44,4 +44,4 @@ class TodolistController {
     
 }
 
-module.exports = new TodolistController;
+module.exports = new RegisterController;
