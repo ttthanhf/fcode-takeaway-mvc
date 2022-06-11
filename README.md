@@ -14,7 +14,7 @@ How to use
  - DB_MYSQL_DATABASE = your_schema_name
 
 7. copy this script and paste to terminal
-script_3: npm start (to run server)
+> script_3: npm start (to run server)
 
 Finish !
 And now open your browser and go to localhost:3000 :)
